@@ -1,0 +1,99 @@
+footer {
+  padding-top: 150px;
+  color: $Very-Pale-Cyan;
+  background-color: $Very-Dark-Cyan;
+  .logo {
+    margin-bottom: 2rem;
+    width: 160px;
+  }
+  .boxes {
+    display: flex;
+    gap: 40px;
+    @include breakpoint("mobile") {
+      flex-direction: column;
+    }
+    .box {
+      font-size: 16px;
+      margin-bottom: 2rem;
+      @include breakpoint("mobile") {
+        margin-bottom: 0;
+      }
+      .line {
+        display: flex;
+        img {
+          align-self: flex-start;
+        }
+
+        .text {
+          padding-right: 40px;
+          line-height: 1.5;
+        }
+
+        .info {
+          margin-left: 1.25rem;
+        }
+      }
+      .line:not(:last-child) {
+        margin-bottom: 1.25rem;
+      }
+
+      ul {
+        li {
+          margin-bottom: 1.25rem;
+        }
+      }
+
+      .social-media {
+        width: 100%;
+        display: inline-flex;
+        gap: 1rem;
+        @include breakpoint("mobile") {
+          justify-content: center;
+        }
+        li {
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 33px;
+            height: 33px;
+            border: 1px solid #fff;
+            border-radius: 100%;
+            color: white;
+            padding: 5px;
+            transition: all 0.3s ease;
+          }
+          a:hover {
+            border-color: $Pink;
+            color: $Pink;
+          }
+        }
+      }
+    }
+    .box1 {
+      width: calc(40% - 40px);
+      @include breakpoint("mobile") {
+        width: 100%;
+      }
+    }
+    .box2,
+    .box3,
+    .box4 {
+      width: calc(20% - 40px);
+      @include breakpoint("mobile") {
+        width: 100%;
+      }
+    }
+  }
+  .copyright {
+    padding: 25px 0;
+    text-align: right;
+    margin: 20px 0 0;
+    font-size: 12px;
+    @include breakpoint("mobile") {
+      text-align: center;
+      padding-top: 0;
+      margin: 0;
+    }
+  }
+}

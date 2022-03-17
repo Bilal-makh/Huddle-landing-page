@@ -1,0 +1,48 @@
+// ### Primary
+$Pink: hsl(322, 100%, 66%);
+// ### Neutral
+$Very-Pale-Cyan: hsl(193, 100%, 96%);
+$Very-Dark-Cyan: hsl(192, 100%, 9%);
+$Grayish-Blue: hsl(208, 11%, 55%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// h1,
+// h2,
+// h3,
+// h4 {
+//   font-family: 'Poppins', sans-serif;
+//   // font-family: "Popins", sans-serif;
+//   font-weight: 600;
+//   text-transform: capitalize;
+// }
+
+@media (max-width: 767px) {
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-col-r {
+    flex-direction: column-reverse;
+  }
+}

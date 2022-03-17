@@ -1,0 +1,38 @@
+@import "../helper/variables";
+.btn {
+  border-radius: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  padding: 10px 50px;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  @include breakpoint ('mobile') {
+    padding: 8px 30px;
+    font-size: 12px;
+  }
+}
+.primary-btn:hover {
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+}
+.secondary-btn {
+  padding: 18px 70px;
+  background-color: $Pink;
+  font-size: 14px;
+  color: $Very-Pale-Cyan;
+  @include breakpoint ('mobile') {
+    padding: 12px 65px;
+    font-size: 1rem;
+  }
+  @include breakpoint("small") {
+    padding: 18px 90px;
+
+  }
+}
+.secondary-btn:hover {
+  background-color: hsla(322, 100%, 66%, 0.7);
+}
